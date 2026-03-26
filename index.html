@@ -1526,9 +1526,9 @@
 
 
     <!-- EmailJS -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
-        emailjs.init('xFKCFgohzHZXxn2U3XXyd');
+        emailjs.init({ publicKey: "xFKCFgohzHZXxn2U3XXyd" });
 
         let currentPlan = '';
         let currentAmount = '';
@@ -1590,12 +1590,13 @@
             msg.textContent = '';
 
             emailjs.send('service_wl6lvog', 'template_d6viu5d', {
+                to_email:   'quantumtrading003@gmail.com',
                 from_name:  name,
                 from_email: email,
                 phone:      phone,
                 plan_name:  currentPlan,
                 amount:     currentAmount,
-                email:      'quantumtrading003@gmail.com'
+                reply_to:   email
             }).then(() => {
                 // Show UPI payment step
                 document.getElementById('purchaseForm').style.display = 'none';
