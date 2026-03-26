@@ -278,56 +278,7 @@
             </div>
         </div>
     </section>
-    <section style="padding:40px 20px; background:#000; text-align:center;">
-
- <h2 style="color:#FFD700; font-size:28px; margin-bottom:10px;">
-    Complete Your Payment
-  </h2>
-
-  <p style="color:#aaa; margin-bottom:25px;">
-    Scan the QR code below and send screenshot to Telegram
-  </p>
-
-  <div style="
-      background:#111;
-      padding:25px;
-      border-radius:15px;
-      display:inline-block;
-      box-shadow:0 0 20px rgba(255,215,0,0.2);
-  ">
-
-    <!-- QR IMAGE -->
-    <img src="https://raw.githubusercontent.com/praveen200100/quantumtrading/main/qr.png" 
-         alt="UPI QR"
-         style="width:260px; border-radius:10px; margin-bottom:15px;">
-
-    <!-- UPI TEXT -->
-    <p style="color:#bbb; margin-bottom:15px;">
-      UPI ID: <b style="color:#fff;">praveen13111999-2@okicici</b>
-    </p>
-
-    <!-- TELEGRAM BUTTON -->
-    <a href="https://t.me/qtmentor" target="_blank"
-       style="
-        display:inline-block;
-        padding:12px 22px;
-        background:#FFD700;
-        color:#000;
-        font-weight:bold;
-        border-radius:8px;
-        text-decoration:none;
-        transition:0.3s;
-       ">
-       Send Payment Screenshot
-    </a>
-
-    <p style="margin-top:12px; font-size:13px; color:#777;">
-      After payment, send screenshot to get access
-    </p>
-
-  </div>
-
-</section> 
+  
     <!-- Telegram CTA -->
     <section class="telegram-cta fade-in">
         <h2 style="background:linear-gradient(135deg,var(--gold),#FFA500);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Join Our Trading Community</h2>
@@ -425,27 +376,14 @@
                 <button class="submit-btn" id="proceedBtn" onclick="submitPurchaseForm()">Proceed to Payment →</button>
                 <div class="form-msg" id="formMsg"></div>
             </div>
-           <div class="upi-box" id="upiBox" style="text-align:center;">
-
-  <h3 style="color:#FFD700;">Scan & Pay</h3>
-
-  <img src="https://raw.githubusercontent.com/praveen200100/quantumtrading/main/qr.png"
-       style="width:220px; margin:15px 0; border-radius:10px;">
-
-  <p style="color:#aaa;">
-    UPI ID: <b style="color:#fff;">praveen13111999-2@okicici</b>
-  </p>
-
-  <a href="https://t.me/qtmentor" target="_blank"
-     style="display:inline-block; margin-top:12px; padding:10px 18px; background:#FFD700; color:#000; border-radius:6px; text-decoration:none; font-weight:bold;">
-     Send Payment Screenshot
-  </a>
-
-  <p style="margin-top:10px; font-size:13px; color:#777;">
-    After payment, send screenshot to Telegram
-  </p>
-
-</div>
+       <div class="upi-box" id="upiBox">
+                <h3>💳 Payment Details</h3>
+                <p>UPI ID-க்கு payment பண்ணுங்க:</p>
+                <div class="upi-id">praveen13111999-2@okicici</div>
+                <div class="amount-show" id="upiAmount">₹2,999</div>
+                <p>Payment பண்ணிய screenshot-ஐ<br>Telegram-ல் அனுப்புங்க.<br><br>
+                <strong style="color:#FFD700;">உங்கள் email-க்கு confirmation வரும்.</strong></p>
+            </div>
         </div>
     </div>
 
