@@ -304,7 +304,7 @@
                     <div class="contact-icon">📧</div>
                     <div class="contact-info">
                         <h4>Email</h4>
-                        <a href="mailto:quantumtrading003@gmail.com">quantumtrading003@gmail.com</a>
+                        <a href="/cdn-cgi/l/email-protection#abdadecac5dfdec6dfd9cacfc2c5cc9b9b98ebccc6cac2c785c8c4c6"><span class="__cf_email__" data-cfemail="97e6e2f6f9e3e2fae3e5f6f3fef9f0a7a7a4d7f0faf6fefbb9f4f8fa">[email&#160;protected]</span></a>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -392,7 +392,7 @@
         <p>⚠️ Trading involves substantial risk. We are NOT SEBI registered. This is for educational purposes only. Past performance is not indicative of future results.</p>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
         // Cursor
         const cursor = document.getElementById('cursor');
@@ -580,8 +580,10 @@
 
         document.querySelectorAll('a[href^="#"]').forEach(a => {
             a.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (!href || href === '#') return; // ← '#' மட்டும் இருந்தா skip
                 e.preventDefault();
-                const t = document.querySelector(this.getAttribute('href'));
+                const t = document.querySelector(href);
                 if(t) t.scrollIntoView({ behavior: 'smooth' });
             });
         });
@@ -629,8 +631,12 @@
                 document.getElementById('purchaseForm').style.display='none';
                 document.getElementById('upiBox').classList.add('active');
             }).catch((err)=>{
-                btn.disabled=false; btn.textContent='Proceed to Payment →';
-                msg.textContent='❌ Error! மீண்டும் try பண்ணுங்க.'; msg.className='form-msg error';
+        
+                msg.textContent = '❌ Error! மீண்டும் try பண்ணுங்க.';
+                msg.className = 'form-msg error';
+                btn.disabled = false;
+                btn.textContent = 'Proceed to Payment →';
+                console.error('EmailJS error:', err);
             });
         }
     </script>
