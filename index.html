@@ -30,7 +30,6 @@
             cursor: none;
         }
 
-        /* Custom Cursor */
         #cursor {
             width: 20px;
             height: 20px;
@@ -58,7 +57,6 @@
             will-change: transform;
         }
 
-        /* Navbar */
         nav {
             position: fixed;
             top: 0;
@@ -110,9 +108,7 @@
             position: relative;
         }
 
-        nav ul li a:hover {
-            color: var(--gold);
-        }
+        nav ul li a:hover { color: var(--gold); }
 
         nav ul li a::after {
             content: '';
@@ -125,11 +121,8 @@
             transition: width 0.3s ease;
         }
 
-        nav ul li a:hover::after {
-            width: 100%;
-        }
+        nav ul li a:hover::after { width: 100%; }
 
-        /* Hero Section */
         .hero {
             height: 100vh;
             display: flex;
@@ -139,23 +132,10 @@
             overflow: hidden;
         }
 
-        /* TradingView Ticker */
         .tradingview-ticker-wrap {
             width: 100%;
             position: relative;
             z-index: 100;
-        }
-        .tradingview-ticker-wrap .tradingview-widget-container {
-            width: 100%;
-        }
-
-        .hero-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
         }
 
         #hero-canvas {
@@ -241,7 +221,6 @@
             transform: translateY(-3px);
         }
 
-        /* Section Styling */
         section {
             padding: 100px 5%;
             position: relative;
@@ -266,7 +245,6 @@
             letter-spacing: 1px;
         }
 
-        /* About Section */
         .about-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -304,7 +282,6 @@
             letter-spacing: 1px;
         }
 
-        /* Who We Are Section */
         .who-we-are {
             max-width: 900px;
             margin: 80px auto 0;
@@ -355,7 +332,6 @@
             border-left: 3px solid var(--gold);
         }
 
-        /* Courses Section */
         .courses-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -377,10 +353,7 @@
         .course-card::before {
             content: '';
             position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
+            top: -2px; left: -2px; right: -2px; bottom: -2px;
             background: linear-gradient(135deg, var(--gold), #FFA500);
             border-radius: 20px;
             opacity: 0;
@@ -388,10 +361,7 @@
             z-index: -1;
         }
 
-        .course-card:hover::before {
-            opacity: 0.3;
-        }
-
+        .course-card:hover::before { opacity: 0.3; }
         .course-card:hover {
             transform: translateY(-10px) scale(1.02);
             box-shadow: 0 20px 60px var(--gold-glow);
@@ -430,86 +400,6 @@
             margin-right: 10px;
         }
 
-        /* Journal Section */
-        .journal-container {
-            max-width: 500px;
-            margin: 0 auto;
-            background: rgba(26, 26, 26, 0.8);
-            padding: 50px;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 215, 0, 0.2);
-            backdrop-filter: blur(10px);
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 10px;
-            color: var(--gold);
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 15px;
-            background: rgba(42, 42, 42, 0.8);
-            border: 1px solid rgba(255, 215, 0, 0.2);
-            border-radius: 10px;
-            color: #fff;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input:focus {
-            outline: none;
-            border-color: var(--gold);
-            box-shadow: 0 0 20px var(--gold-glow);
-        }
-
-        /* Features Section */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .feature-card {
-            background: rgba(26, 26, 26, 0.6);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(255, 215, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .feature-card:hover {
-            border-color: var(--gold);
-            transform: translateY(-5px);
-        }
-
-        .feature-icon {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .feature-title {
-            font-size: 22px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: var(--gold);
-        }
-
-        .feature-description {
-            color: #ccc;
-            line-height: 1.6;
-        }
-
-        /* Testimonials */
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -533,10 +423,7 @@
             line-height: 1.8;
         }
 
-        .testimonial-author {
-            font-weight: 600;
-            color: var(--gold);
-        }
+        .testimonial-author { font-weight: 600; color: var(--gold); }
 
         .testimonial-profit {
             margin-top: 10px;
@@ -545,7 +432,6 @@
             font-size: 18px;
         }
 
-        /* Telegram CTA */
         .telegram-cta {
             text-align: center;
             padding: 80px 20px;
@@ -553,11 +439,6 @@
             border-radius: 20px;
             margin: 0 5%;
             border: 2px solid rgba(255, 215, 0, 0.2);
-        }
-
-        .telegram-cta h2 {
-            font-size: 42px;
-            margin-bottom: 20px;
         }
 
         .telegram-btn {
@@ -580,38 +461,13 @@
             box-shadow: 0 15px 50px rgba(0, 136, 204, 0.5);
         }
 
-        /* Footer */
         footer {
             padding: 60px 5%;
             border-top: 1px solid rgba(255, 215, 0, 0.1);
             text-align: center;
         }
 
-        /* Risk Disclaimer */
-        .risk-disclaimer {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: rgba(244, 67, 54, 0.15);
-            border: 1px solid rgba(244, 67, 54, 0.3);
-            border-radius: 8px;
-            padding: 10px 15px;
-            max-width: 350px;
-            z-index: 999;
-        }
-
-        .risk-disclaimer p {
-            color: #ff6b6b;
-            font-size: 11px;
-            font-weight: 500;
-            margin: 0;
-            letter-spacing: 0.3px;
-            line-height: 1.4;
-        }
-
-        .footer-legal {
-            margin: 30px 0;
-        }
+        .footer-legal { margin: 30px 0; }
 
         .footer-legal h3 {
             color: var(--gold);
@@ -635,19 +491,14 @@
             transition: color 0.3s ease;
         }
 
-        .legal-links a:hover {
-            color: var(--gold);
-        }
+        .legal-links a:hover { color: var(--gold); }
 
-        /* Modal */
         .modal {
             display: none;
             position: fixed;
             z-index: 10000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
             background: rgba(0, 0, 0, 0.9);
             overflow-y: auto;
             cursor: none;
@@ -675,69 +526,15 @@
             line-height: 1;
         }
 
-        .close-modal:hover {
-            color: #FFA500;
-        }
+        .close-modal:hover { color: #FFA500; }
 
-        #modal-body h2 {
-            color: var(--gold);
-            margin-bottom: 20px;
-            font-size: 28px;
-        }
+        #modal-body h2 { color: var(--gold); margin-bottom: 20px; font-size: 28px; }
+        #modal-body h3 { color: var(--gold); margin: 25px 0 15px; font-size: 20px; }
+        #modal-body p { color: #ddd; line-height: 1.8; margin-bottom: 15px; }
+        #modal-body ul { color: #ddd; line-height: 1.8; margin-left: 20px; }
 
-        #modal-body h3 {
-            color: var(--gold);
-            margin: 25px 0 15px;
-            font-size: 20px;
-        }
+        .copyright { color: #666; font-size: 14px; }
 
-        #modal-body p {
-            color: #ddd;
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
-        #modal-body ul {
-            color: #ddd;
-            line-height: 1.8;
-            margin-left: 20px;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: #ccc;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: var(--gold);
-        }
-
-        .copyright {
-            color: #666;
-            font-size: 14px;
-        }
-
-        /* 3D Canvas */
-        #chart-3d {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        /* Scroll Animations */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
@@ -749,7 +546,6 @@
             transform: translateY(0);
         }
 
-        /* Mobile Menu */
         .mobile-menu {
             display: none;
             flex-direction: column;
@@ -777,30 +573,13 @@
                 gap: 20px;
             }
 
-            nav ul.active {
-                display: flex;
-            }
-
-            .mobile-menu {
-                display: flex;
-            }
+            nav ul.active { display: flex; }
+            .mobile-menu { display: flex; }
 
             .courses-grid,
-            .features-grid,
             .testimonials-grid {
                 grid-template-columns: 1fr;
             }
-        }
-
-        /* Animations */
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-
-        @keyframes glow {
-            0%, 100% { box-shadow: 0 0 20px var(--gold-glow); }
-            50% { box-shadow: 0 0 40px var(--gold-glow), 0 0 60px var(--gold-glow); }
         }
 
         /* Purchase Modal */
@@ -814,9 +593,9 @@
             justify-content: center;
             align-items: center;
         }
-        .purchase-modal-overlay.active {
-            display: flex;
-        }
+
+        .purchase-modal-overlay.active { display: flex; }
+
         .purchase-modal {
             background: #1a1a1a;
             border: 1px solid rgba(255,215,0,0.3);
@@ -827,22 +606,26 @@
             position: relative;
             animation: modalIn 0.3s ease;
         }
+
         @keyframes modalIn {
             from { transform: scale(0.85); opacity: 0; }
             to   { transform: scale(1);    opacity: 1; }
         }
+
         .purchase-modal h2 {
             color: var(--gold);
             font-size: 22px;
             margin-bottom: 6px;
             font-weight: 800;
         }
+
         .purchase-modal .plan-amount {
             color: #fff;
             font-size: 28px;
             font-weight: 800;
             margin-bottom: 24px;
         }
+
         .purchase-modal label {
             display: block;
             color: var(--gold);
@@ -851,6 +634,7 @@
             margin-bottom: 6px;
             letter-spacing: 1px;
         }
+
         .purchase-modal input {
             width: 100%;
             background: #2a2a2a;
@@ -864,9 +648,9 @@
             font-family: 'Montserrat', sans-serif;
             transition: border 0.2s;
         }
-        .purchase-modal input:focus {
-            border-color: var(--gold);
-        }
+
+        .purchase-modal input:focus { border-color: var(--gold); }
+
         .purchase-modal .submit-btn {
             width: 100%;
             padding: 15px;
@@ -881,10 +665,12 @@
             margin-top: 4px;
             transition: opacity 0.2s;
         }
+
         .purchase-modal .submit-btn:disabled {
             opacity: 0.6;
             cursor: not-allowed;
         }
+
         .purchase-modal .close-purchase {
             position: absolute;
             top: 16px; right: 20px;
@@ -895,6 +681,7 @@
             border: none;
             line-height: 1;
         }
+
         .upi-box {
             display: none;
             background: #0a0a0a;
@@ -904,12 +691,15 @@
             text-align: center;
             margin-top: 10px;
         }
+
         .upi-box.active { display: block; }
+
         .upi-box h3 {
             color: var(--gold);
             font-size: 18px;
             margin-bottom: 8px;
         }
+
         .upi-box .upi-id {
             color: #fff;
             font-size: 22px;
@@ -921,30 +711,33 @@
             margin: 12px 0;
             display: inline-block;
         }
+
         .upi-box p {
             color: #aaa;
             font-size: 13px;
             margin-top: 8px;
             line-height: 1.6;
         }
+
         .upi-box .amount-show {
             color: #4CAF50;
             font-size: 26px;
             font-weight: 800;
             margin: 8px 0;
         }
+
         .form-msg {
             font-size: 13px;
             margin-top: 8px;
             text-align: center;
             min-height: 18px;
         }
+
         .form-msg.error { color: #f44336; }
         .form-msg.success { color: #4CAF50; }
     </style>
 </head>
 <body>
-    <!-- Custom Cursor -->
     <div id="cursor"></div>
     <div id="cursor-glow"></div>
 
@@ -962,9 +755,7 @@
             <li><a href="https://praveen200100.github.io/qt-journal/" target="_blank" class="btn btn-secondary" style="padding: 10px 25px; font-size: 14px;">Login</a></li>
         </ul>
         <div class="mobile-menu" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </div>
     </nav>
 
@@ -981,7 +772,7 @@
         </div>
     </section>
 
-    <!-- Live Market Data Ticker - TradingView Widget -->
+    <!-- TradingView Ticker -->
     <div class="tradingview-ticker-wrap">
         <div class="tradingview-widget-container">
             <div class="tradingview-widget-container__widget"></div>
@@ -1030,13 +821,11 @@
             </div>
         </div>
 
-        <!-- Who We Are -->
         <div class="who-we-are">
             <h3>Who We Are</h3>
             <h4>Trading is a Skill. We Teach it Right.</h4>
             <p>Quantum Trading was built by professional traders who spent years mastering Forex, Futures, and Indian markets before creating a system that actually works.</p>
             <p>No hype. No overnight millionaire promises. Just proven strategies, risk management, and the mindset to trade consistently profitable.</p>
-            
             <div class="offerings-grid">
                 <div class="offering-item">▸ Forex & Forex Futures Strategies</div>
                 <div class="offering-item">▸ Indian Markets — Nifty, BankNifty, Sensex</div>
@@ -1086,9 +875,9 @@
                     <li>3 Days Weekly Live Sessions</li>
                     <li>1 Month Access</li>
                 </ul>
-                <button class="btn btn-primary" style="width: 100%; margin-top: 20px;" onclick="openPurchaseModal('Trading Signals','₹2,999','2999')">Buy Now</button>
+                <button class="btn btn-primary" style="width:100%;margin-top:20px;" onclick="openPurchaseModal('Trading Signals','₹2,999','2999')">Buy Now</button>
             </div>
-            
+
             <div class="course-card">
                 <h3 class="course-title">Group Mentorship</h3>
                 <div class="course-price">₹9,999</div>
@@ -1101,9 +890,9 @@
                     <li>Trading Psychology Training</li>
                     <li>Lifetime Access</li>
                 </ul>
-                <button class="btn btn-primary" style="width: 100%; margin-top: 20px;" onclick="openPurchaseModal('Group Mentorship','₹9,999','9999')">Buy Now</button>
+                <button class="btn btn-primary" style="width:100%;margin-top:20px;" onclick="openPurchaseModal('Group Mentorship','₹9,999','9999')">Buy Now</button>
             </div>
-            
+
             <div class="course-card">
                 <h3 class="course-title">Personal Mentorship</h3>
                 <div class="course-price">₹24,999</div>
@@ -1116,26 +905,23 @@
                     <li>Lifetime Course Access</li>
                     <li>6 Months Personal Support</li>
                 </ul>
-                <button class="btn btn-primary" style="width: 100%; margin-top: 20px;" onclick="openPurchaseModal('Personal Mentorship','₹24,999','24999')">Buy Now</button>
+                <button class="btn btn-primary" style="width:100%;margin-top:20px;" onclick="openPurchaseModal('Personal Mentorship','₹24,999','24999')">Buy Now</button>
             </div>
         </div>
     </section>
 
     <!-- Telegram CTA -->
     <section class="telegram-cta fade-in">
-        <h2 style="background: linear-gradient(135deg, var(--gold), #FFA500); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Join Our Trading Community</h2>
-        <p style="color: #ccc; margin-bottom: 30px; font-size: 18px;">Get daily market analysis, trade setups, and connect with successful traders</p>
+        <h2 style="background:linear-gradient(135deg,var(--gold),#FFA500);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Join Our Trading Community</h2>
+        <p style="color:#ccc;margin-bottom:30px;font-size:18px;">Get daily market analysis, trade setups, and connect with successful traders</p>
         <a href="https://t.me/quantumtrading33" target="_blank" class="telegram-btn">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2s-.18-.03-.26-.02c-.11.02-1.75 1.11-4.94 3.26-.47.33-.89.49-1.28.48-.42-.01-1.23-.24-1.83-.44-.74-.24-1.33-.37-1.28-.78.03-.21.37-.43 1.02-.65 3.99-1.74 6.65-2.89 7.98-3.45 3.8-1.58 4.59-1.85 5.1-1.86.11 0 .37.03.53.17.14.12.18.28.2.44-.01.06.01.24 0 .38z"/></svg>
             Join Telegram Community
         </a>
     </section>
 
-
-
     <!-- Footer -->
     <footer>
-
         <div class="footer-legal">
             <h3>Legal</h3>
             <div class="legal-links">
@@ -1145,7 +931,6 @@
                 <a href="#" onclick="showLegalModal('refund')">Refund Policy</a>
             </div>
         </div>
-        
         <p class="copyright">&copy; 2024 Quantum Trading. All rights reserved. Trade responsibly.</p>
     </footer>
 
@@ -1157,342 +942,11 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script>
-        // Custom Cursor
-        const cursor = document.getElementById('cursor');
-        const cursorGlow = document.getElementById('cursor-glow');
-
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.transform = 'translate(' + (e.clientX - 10) + 'px, ' + (e.clientY - 10) + 'px)';
-            cursorGlow.style.transform = 'translate(' + (e.clientX - 30) + 'px, ' + (e.clientY - 30) + 'px)';
-        });
-
-        document.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; cursorGlow.style.opacity = '0'; });
-        document.addEventListener('mouseenter', () => { cursor.style.opacity = '1'; cursorGlow.style.opacity = '1'; });
-
-        // Mobile Menu Toggle
-        function toggleMenu() {
-            document.getElementById('nav-menu').classList.toggle('active');
-        }
-
-        // Smooth Scroll
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // Animated Counter
-        function animateCounter(element) {
-            const target = parseInt(element.getAttribute('data-target'));
-            const duration = 2000;
-            const step = target / (duration / 16);
-            let current = 0;
-            
-            const timer = setInterval(() => {
-                current += step;
-                if (current >= target) {
-                    element.textContent = target.toLocaleString();
-                    clearInterval(timer);
-                } else {
-                    element.textContent = Math.floor(current).toLocaleString();
-                }
-            }, 16);
-        }
-
-        // Scroll Animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    
-                    // Animate counters when visible
-                    if (entry.target.id === 'about') {
-                        document.querySelectorAll('.stat-number').forEach(animateCounter);
-                    }
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-        // Hero Canvas Animation
-        const canvas = document.getElementById('hero-canvas');
-        const ctx = canvas.getContext('2d');
-        
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        let particles = [];
-        const particleCount = 100;
-
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2;
-                this.speedX = (Math.random() - 0.5) * 0.5;
-                this.speedY = (Math.random() - 0.5) * 0.5;
-            }
-
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-
-                if (this.x > canvas.width) this.x = 0;
-                if (this.x < 0) this.x = canvas.width;
-                if (this.y > canvas.height) this.y = 0;
-                if (this.y < 0) this.y = canvas.height;
-            }
-
-            draw() {
-                ctx.fillStyle = 'rgba(255, 215, 0, 0.5)';
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-
-        function initParticles() {
-            particles = [];
-            for (let i = 0; i < particleCount; i++) {
-                particles.push(new Particle());
-            }
-        }
-
-        function connectParticles() {
-            for (let i = 0; i < particles.length; i++) {
-                for (let j = i + 1; j < particles.length; j++) {
-                    const dx = particles[i].x - particles[j].x;
-                    const dy = particles[i].y - particles[j].y;
-                    const distance = Math.sqrt(dx * dx + dy * dy);
-
-                    if (distance < 100) {
-                        ctx.strokeStyle = `rgba(255, 215, 0, ${1 - distance / 100})`;
-                        ctx.lineWidth = 0.5;
-                        ctx.beginPath();
-                        ctx.moveTo(particles[i].x, particles[i].y);
-                        ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.stroke();
-                    }
-                }
-            }
-        }
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
-            particles.forEach(particle => {
-                particle.update();
-                particle.draw();
-            });
-
-            connectParticles();
-            requestAnimationFrame(animate);
-        }
-
-        initParticles();
-        animate();
-
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            initParticles();
-        });
-
-        // Journal Form Handler
-        document.getElementById('journal-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Firebase authentication integration needed. This is a demo.');
-        });
-
-        // Market data handled by TradingView widget above
-
-        // Legal Modal Functions
-        function showLegalModal(type) {
-            const modal = document.getElementById('legal-modal');
-            const modalBody = document.getElementById('modal-body');
-            
-            let content = '';
-            
-            switch(type) {
-                case 'privacy':
-                    content = `
-                        <h2>Privacy Policy</h2>
-                        <p><strong>Last Updated:</strong> March 2024</p>
-                        
-                        <h3>1. Information We Collect</h3>
-                        <p>We collect information that you provide directly to us when you register for courses, create an account, or use our trading journal. This includes:</p>
-                        <ul>
-                            <li>Name, email address, and contact information</li>
-                            <li>Payment and billing information</li>
-                            <li>Trading journal data and preferences</li>
-                            <li>Communication history with our support team</li>
-                        </ul>
-                        
-                        <h3>2. How We Use Your Information</h3>
-                        <p>We use the collected information to:</p>
-                        <ul>
-                            <li>Provide access to our courses and trading journal</li>
-                            <li>Process payments and maintain billing records</li>
-                            <li>Send important updates about your courses</li>
-                            <li>Improve our services and user experience</li>
-                            <li>Respond to your questions and support requests</li>
-                        </ul>
-                        
-                        <h3>3. Data Security</h3>
-                        <p>We implement industry-standard security measures to protect your personal information. However, no method of transmission over the internet is 100% secure.</p>
-                        
-                        <h3>4. Contact Us</h3>
-                        <p>For privacy-related questions, contact us through our Telegram community.</p>
-                    `;
-                    break;
-                    
-                case 'terms':
-                    content = `
-                        <h2>Terms of Use</h2>
-                        <p><strong>Last Updated:</strong> March 2024</p>
-                        
-                        <h3>1. Acceptance of Terms</h3>
-                        <p>By accessing and using Quantum Trading services, you agree to be bound by these Terms of Use. If you do not agree, please do not use our services.</p>
-                        
-                        <h3>2. Course Access</h3>
-                        <p>Upon purchase, you receive lifetime access to course materials. Access is granted for personal use only and may not be shared or distributed.</p>
-                        
-                        <h3>3. User Responsibilities</h3>
-                        <ul>
-                            <li>You must be 18 years or older to use our services</li>
-                            <li>You are responsible for maintaining account security</li>
-                            <li>You must not share your login credentials</li>
-                            <li>You must not reproduce or distribute course materials</li>
-                        </ul>
-                        
-                        <h3>4. Intellectual Property</h3>
-                        <p>All course content, including videos, documents, and trading strategies, are the intellectual property of Quantum Trading. Unauthorized use or distribution is prohibited.</p>
-                        
-                        <h3>5. Modifications</h3>
-                        <p>We reserve the right to modify these terms at any time. Continued use of our services constitutes acceptance of modified terms.</p>
-                        
-                        <h3>6. Governing Law</h3>
-                        <p>These terms are governed by the laws of India.</p>
-                    `;
-                    break;
-                    
-                case 'disclaimer':
-                    content = `
-                        <h2>Disclaimer</h2>
-                        <p><strong>Educational Purpose Only</strong></p>
-                        
-                        <h3>SEBI Registration</h3>
-                        <p><strong>⚠️ We are NOT SEBI registered analysts.</strong> Quantum Trading is an educational platform providing training on trading concepts and strategies. We do not provide investment advice or recommendations.</p>
-                        
-                        <h3>Trading Risks</h3>
-                        <p>Trading in financial markets involves substantial risk of loss. You should carefully consider whether trading is suitable for you in light of your circumstances, knowledge, and financial resources.</p>
-                        
-                        <ul>
-                            <li>Past performance is not indicative of future results</li>
-                            <li>You may lose all or more of your initial investment</li>
-                            <li>Trading may not be suitable for all investors</li>
-                            <li>Leveraged products carry a high degree of risk</li>
-                        </ul>
-                        
-                        <h3>Educational Content</h3>
-                        <p>All content provided is for educational purposes only. It is not personalized investment advice. You are solely responsible for your trading decisions.</p>
-                        
-                        <h3>No Guaranteed Returns</h3>
-                        <p>We do not guarantee any specific results or profits. Testimonials represent individual experiences and may not reflect typical results.</p>
-                        
-                        <h3>Seek Professional Advice</h3>
-                        <p>Before making any trading decisions, consult with a qualified financial advisor or SEBI registered analyst.</p>
-                        
-                        <h3>Your Responsibility</h3>
-                        <p>By using our services, you acknowledge that:</p>
-                        <ul>
-                            <li>You understand the risks involved in trading</li>
-                            <li>You are responsible for your own trading decisions</li>
-                            <li>You will not hold Quantum Trading liable for any losses</li>
-                            <li>You have read and understood this disclaimer</li>
-                        </ul>
-                    `;
-                    break;
-                    
-                case 'refund':
-                    content = `
-                        <h2>Refund Policy</h2>
-                        <p><strong>Last Updated:</strong> March 2024</p>
-                        
-                        <h3>No Refund Policy</h3>
-                        <p><strong>All sales are final.</strong> Due to the digital nature of our products and immediate access to course materials upon purchase, we do not offer refunds.</p>
-                        
-                        <h3>Why No Refunds?</h3>
-                        <ul>
-                            <li>Instant access to all course materials upon payment</li>
-                            <li>Digital products cannot be "returned"</li>
-                            <li>Content can be downloaded and accessed immediately</li>
-                        </ul>
-                        
-                        <h3>Before You Purchase</h3>
-                        <p>Please carefully review:</p>
-                        <ul>
-                            <li>Course curriculum and content description</li>
-                            <li>Pricing and what's included</li>
-                            <li>Any free preview materials available</li>
-                            <li>Student reviews and testimonials</li>
-                        </ul>
-                        
-                        <h3>Technical Issues</h3>
-                        <p>If you experience technical difficulties accessing course materials, please contact our support team immediately. We will work to resolve technical issues, but this does not entitle you to a refund.</p>
-                        
-                        <h3>Account Access</h3>
-                        <p>Your account access remains active for the lifetime of the course. If you lose access due to technical issues on our end, we will restore it promptly.</p>
-                        
-                        <h3>Questions?</h3>
-                        <p>If you have questions about our courses before purchasing, please reach out to us via our Telegram community. We're happy to help you make an informed decision.</p>
-                        
-                        <h3>Chargebacks</h3>
-                        <p>Initiating a chargeback or payment dispute will result in immediate termination of access to all course materials and community resources.</p>
-                    `;
-                    break;
-            }
-            
-            modalBody.innerHTML = content;
-            modal.style.display = 'block';
-        }
-
-        function closeLegalModal() {
-            document.getElementById('legal-modal').style.display = 'none';
-        }
-
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            const modal = document.getElementById('legal-modal');
-            if (event.target === modal) {
-                closeLegalModal();
-            }
-        }
-
-        // Smooth scroll for all links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
-
     <!-- Purchase Modal -->
     <div class="purchase-modal-overlay" id="purchaseOverlay">
         <div class="purchase-modal" id="purchaseModal">
             <button class="close-purchase" onclick="closePurchaseModal()">&#x2715;</button>
 
-            <!-- Step 1: Form -->
             <div id="purchaseForm">
                 <h2 id="modalPlanName">Trading Signals</h2>
                 <div class="plan-amount" id="modalPlanAmount">₹2,999</div>
@@ -1512,7 +966,6 @@
                 <div class="form-msg" id="formMsg"></div>
             </div>
 
-            <!-- Step 2: UPI Payment -->
             <div class="upi-box" id="upiBox">
                 <h3>💳 Payment Details</h3>
                 <p>UPI ID-க்கு payment பண்ணுங்க:</p>
@@ -1524,11 +977,176 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Custom Cursor
+        const cursor = document.getElementById('cursor');
+        const cursorGlow = document.getElementById('cursor-glow');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.transform = 'translate(' + (e.clientX - 10) + 'px, ' + (e.clientY - 10) + 'px)';
+            cursorGlow.style.transform = 'translate(' + (e.clientX - 30) + 'px, ' + (e.clientY - 30) + 'px)';
+        });
+
+        document.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; cursorGlow.style.opacity = '0'; });
+        document.addEventListener('mouseenter', () => { cursor.style.opacity = '1'; cursorGlow.style.opacity = '1'; });
+
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    element.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current).toLocaleString();
+                }
+            }, 16);
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    if (entry.target.id === 'about') {
+                        document.querySelectorAll('.stat-number').forEach(animateCounter);
+                    }
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Hero Canvas
+        const canvas = document.getElementById('hero-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        let particles = [];
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2;
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.speedY = (Math.random() - 0.5) * 0.5;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x > canvas.width) this.x = 0;
+                if (this.x < 0) this.x = canvas.width;
+                if (this.y > canvas.height) this.y = 0;
+                if (this.y < 0) this.y = canvas.height;
+            }
+            draw() {
+                ctx.fillStyle = 'rgba(255, 215, 0, 0.5)';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            for (let i = 0; i < 100; i++) particles.push(new Particle());
+        }
+
+        function connectParticles() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    if (distance < 100) {
+                        ctx.strokeStyle = `rgba(255, 215, 0, ${1 - distance / 100})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            connectParticles();
+            requestAnimationFrame(animate);
+        }
+
+        initParticles();
+        animate();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initParticles();
+        });
+
+        // Legal Modal
+        function showLegalModal(type) {
+            const modal = document.getElementById('legal-modal');
+            const modalBody = document.getElementById('modal-body');
+            let content = '';
+
+            switch(type) {
+                case 'privacy':
+                    content = `<h2>Privacy Policy</h2><p><strong>Last Updated:</strong> March 2024</p><h3>1. Information We Collect</h3><p>We collect information you provide when registering for courses or using our trading journal, including name, email, payment info, and trading data.</p><h3>2. How We Use Your Information</h3><p>To provide course access, process payments, send updates, improve services, and respond to support requests.</p><h3>3. Data Security</h3><p>We implement industry-standard security measures to protect your personal information.</p><h3>4. Contact Us</h3><p>For privacy-related questions, contact us through our Telegram community.</p>`;
+                    break;
+                case 'terms':
+                    content = `<h2>Terms of Use</h2><p><strong>Last Updated:</strong> March 2024</p><h3>1. Acceptance of Terms</h3><p>By using Quantum Trading services, you agree to these Terms of Use.</p><h3>2. Course Access</h3><p>Upon purchase, you receive lifetime access to course materials for personal use only.</p><h3>3. User Responsibilities</h3><ul><li>You must be 18 years or older</li><li>You are responsible for maintaining account security</li><li>You must not share login credentials or distribute course materials</li></ul><h3>4. Intellectual Property</h3><p>All course content is the intellectual property of Quantum Trading. Unauthorized use is prohibited.</p><h3>5. Governing Law</h3><p>These terms are governed by the laws of India.</p>`;
+                    break;
+                case 'disclaimer':
+                    content = `<h2>Disclaimer</h2><p><strong>Educational Purpose Only</strong></p><h3>SEBI Registration</h3><p><strong>⚠️ We are NOT SEBI registered analysts.</strong> Quantum Trading is an educational platform only. We do not provide investment advice.</p><h3>Trading Risks</h3><ul><li>Past performance is not indicative of future results</li><li>You may lose all or more of your initial investment</li><li>Trading may not be suitable for all investors</li><li>Leveraged products carry a high degree of risk</li></ul><h3>Your Responsibility</h3><p>You are solely responsible for your trading decisions. By using our services, you acknowledge you will not hold Quantum Trading liable for any losses.</p>`;
+                    break;
+                case 'refund':
+                    content = `<h2>Refund Policy</h2><p><strong>Last Updated:</strong> March 2024</p><h3>No Refund Policy</h3><p><strong>All sales are final.</strong> Due to instant access to digital course materials upon purchase, we do not offer refunds.</p><h3>Before You Purchase</h3><p>Please carefully review the course curriculum, pricing, and student reviews before purchasing.</p><h3>Technical Issues</h3><p>If you experience technical difficulties, contact support immediately. This does not entitle you to a refund.</p><h3>Chargebacks</h3><p>Initiating a chargeback will result in immediate termination of access to all course materials.</p>`;
+                    break;
+            }
+
+            modalBody.innerHTML = content;
+            modal.style.display = 'block';
+        }
+
+        function closeLegalModal() {
+            document.getElementById('legal-modal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('legal-modal');
+            if (event.target === modal) closeLegalModal();
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
 
     <!-- EmailJS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
-        emailjs.init({ publicKey: "xFKCFgohzHZXxn2U3XXyd" });
+        // ✅ FIXED: Correct Public Key
+        emailjs.init({ publicKey: "U8DGUH-5Jq1mnI2aS" });
 
         let currentPlan = '';
         let currentAmount = '';
@@ -1541,7 +1159,6 @@
             document.getElementById('modalPlanName').textContent = plan;
             document.getElementById('modalPlanAmount').textContent = amount;
             document.getElementById('upiAmount').textContent = amount;
-            // Reset form
             document.getElementById('purchaseForm').style.display = 'block';
             document.getElementById('upiBox').classList.remove('active');
             document.getElementById('buyerName').value = '';
@@ -1550,6 +1167,7 @@
             document.getElementById('formMsg').textContent = '';
             document.getElementById('formMsg').className = 'form-msg';
             document.getElementById('proceedBtn').disabled = false;
+            document.getElementById('proceedBtn').textContent = 'Proceed to Payment →';
             document.getElementById('purchaseOverlay').classList.add('active');
         }
 
@@ -1557,7 +1175,6 @@
             document.getElementById('purchaseOverlay').classList.remove('active');
         }
 
-        // Close on overlay click
         document.getElementById('purchaseOverlay').addEventListener('click', function(e) {
             if (e.target === this) closePurchaseModal();
         });
@@ -1598,7 +1215,6 @@
                 amount:     currentAmount,
                 reply_to:   email
             }).then(() => {
-                // Show UPI payment step
                 document.getElementById('purchaseForm').style.display = 'none';
                 document.getElementById('upiBox').classList.add('active');
             }).catch((err) => {
